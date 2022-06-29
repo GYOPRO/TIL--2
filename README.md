@@ -80,6 +80,7 @@
      - 중첩 금지,터미널에 이미 (master)가 있다면, 입력하면 안됩니다.
   
    2. git status
+   
      - Working Directory 와 Staging Area 에 있는 파일의 현재 상태를 알려주는 명령어
      - 어떤 작업을 시행하기 전 수시로 상태를 확인하면 좋습니다.
      - 상태
@@ -89,18 +90,21 @@
           b. Modified : 수정되었지만 아직 Staging Area에는 반영되지 않은 상태
           c. Stage : Staging Area에 올라간 상태
 
-    3. git add "파일명" or .(전부)
+
+    1. git add "파일명" or .(전부)
      - Working Directory에 있는 파일을 Staging Area 로 올리는 명령어
      - Git이 행당 파일을 추적(관리)할 수 있도록 만듭니다.
      - Untracked, Modified -> Stage로 상태를 변경합니다. 
   
-    4. git commit -m "파일명"
+
+    2. git commit -m "파일명"g
      - Staging Area에 올라온 파일의 변경 사항을 하나의 버전(커밋)으로 저장하는 명령어
      - 커밋 메세지는 현재 변경 사항등을 잘 나타낼 수 있도록 **의미** 있게 작성하는 것을 권장합니다.
      - 각각의 커밋은 SHA-1 알고리즘에 의해 반환 된 고유의 해시 값을 ID로 가집니다.
      - (root-commit) 은 해당 커밋이 최초의 커밋 일 때만 표시됩니다. 이후 커밋부터는 사라집니다.
   
-    5. git log
+
+    3. git log
      -  커밋의 내역(ID, 작성자, 시간, 메세지 등)을 조회할 수 있는 명령어
      -  옵션
         * --online : 한 줄로 축약해서 보여줌
@@ -110,6 +114,7 @@
         *  -p : 파일의 변경 내용도 같이 보여줌
         *  -2 : 원하는 갯수 만큼의 내역을 보여줌(-임의의 숫자)
   
+
      1. mkdir 폴더명 -> 폴더 만들기
    
      2. touch 파일명.확장자명 -> 파일 만들기
